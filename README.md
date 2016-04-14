@@ -20,9 +20,9 @@ of template file, then put the value into dictionary whose key is varName. then 
 then, you should get 
      hello, jack
      
-     if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, if you want
-to get property object's property, you should only represent it as ${objectVarName.property1.property2}, '.' represent to get the object's
-property vaule. For example,
+     if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
+     if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
+     '.' represent to get the object's property vaule. For example,
 
      class SQLBean:
         def __init__(self):
