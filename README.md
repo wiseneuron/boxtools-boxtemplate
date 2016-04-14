@@ -11,12 +11,15 @@ Dependencies
 
 Usage
    read _test_.py.
-     if you want to relace a variable with a value, you shoude define represent as ${varName} format in template string
+   
+if you want to relace a variable with a value, you shoude define represent as ${varName} format in template string
 of template file, then put the value into dictionary whose key is varName. then call fill_template_* functtion. For example,
+```
      tpl1 = 'hello, ${user}'
      dic = {'user': 'jack'}
      s1 = fill_template_str(tpl3, mapDic)
      print s1
+```
 then, you should get 
      hello, jack
 if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
