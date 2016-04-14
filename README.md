@@ -19,11 +19,9 @@ of template file, then put the value into dictionary whose key is varName. then 
      print s1
 then, you should get 
      hello, jack
-     
-     if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
-     if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
-     '.' represent to get the object's property vaule. For example,
-     
+if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
+if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
+'.' represent to get the object's property vaule. For example,
 ```
 
      class SQLBean:
@@ -45,7 +43,6 @@ then, you should get
      s3 = fill_template_str(tpl3, mapDic)
      print 'fill_template_with_object:' + s3
 ```
-
 You can test and learn it by reading and run _test_.py in the project.      
       
 auth:
