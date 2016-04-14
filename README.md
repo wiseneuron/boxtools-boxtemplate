@@ -23,6 +23,8 @@ then, you should get
      if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
      if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
      '.' represent to get the object's property vaule. For example,
+     
+```
 
      class SQLBean:
         def __init__(self):
@@ -42,6 +44,7 @@ then, you should get
      mapDic = {'sqlbean':sqlbean, 'it':it}
      s3 = fill_template_str(tpl3, mapDic)
      print 'fill_template_with_object:' + s3
+```
 
 You can test and learn it by reading and run _test_.py in the project.      
       
