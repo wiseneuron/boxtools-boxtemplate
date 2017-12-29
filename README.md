@@ -14,20 +14,21 @@ Usage
    
 if you want to relace a variable with a value, you shoude define represent as ${varName} format in template string
 of template file, then put the value into dictionary whose key is varName. then call fill_template_* functtion. For example,
+```python
+tpl1 = 'hello, ${user}'
+dic = {'user': 'jack'}
+s1 = fill_template_str(tpl3, mapDic)
+print s1
 ```
-     tpl1 = 'hello, ${user}'
-     dic = {'user': 'jack'}
-     s1 = fill_template_str(tpl3, mapDic)
-     print s1
+then, you should get, 
+```bash
+hello, jack
 ```
-then, you should get 
-     hello, jack
 if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
 if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
 '.' represent to get the object's property vaule. For example,
-```
-
-     class SQLBean:
+```python
+    class SQLBean:
         def __init__(self):
             self.table = Table('User')
             self.where = Where('id=123')
@@ -48,8 +49,8 @@ if you want to get property object's property, you should only represent it as $
 ```
 You can test and learn it by reading and run _test_.py in the project.      
       
-auth:
-if you want contact the auth, please 
+author: neuron
+if you want contact the author, please 
 visit http://idocbox.com/ or send mail to wiseneuron@gmail.com
 
 thanks!
