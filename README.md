@@ -13,8 +13,8 @@ Dependencies:
 Usage
    read _test_.py.
    
-if you want to relace a variable with a value, you shoude define represent as ${varName} format in template string
-of template file, then put the value into dictionary whose key is varName. then call fill_template_* functtion. For example,
+if you want to relace a variable with a value, you shoude define represent as ``${varName}`` format in template string
+of template file, then put the value into dictionary whose key is varName. then call ``fill_template_*`` functtion. For example,
 ```python
 tpl1 = 'hello, ${user}'
 dic = {'user': 'jack'}
@@ -25,8 +25,8 @@ then, you should get,
 ```bash
 hello, jack
 ```
-if you want to replace some place with an object's property, you should represent it as ${objectVarName.property1}, 
-if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
+if you want to replace some place with an object's property, you should represent it as ``${objectVarName.property1}``, 
+if you want to get property object's property, you should only represent it as ``${objectVarName.property1.property2}``, 
 '.' represent to get the object's property vaule. For example,
 ```python
      class SQLBean:
@@ -48,7 +48,7 @@ if you want to get property object's property, you should only represent it as $
      s3 = fill_template_str(tpl3, mapDic)
      print 'fill_template_with_object:' + s3
 ```
-You can test and learn it by reading and run _test_.py in the project.      
+You can test and learn it by reading and ``run _test_.py`` in the project.      
       
 author: neuron
 if you want contact the author, please 
