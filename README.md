@@ -6,7 +6,8 @@ Introduction
 boxtemplate is a very light template tool.
    
 
-Dependencies
+Dependencies:
+
 1.python 2.4+
 
 Usage
