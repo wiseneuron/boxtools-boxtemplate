@@ -29,7 +29,7 @@ if you want to replace some place with an object's property, you should represen
 if you want to get property object's property, you should only represent it as ${objectVarName.property1.property2}, 
 '.' represent to get the object's property vaule. For example,
 ```python
-    class SQLBean:
+     class SQLBean:
         def __init__(self):
             self.table = Table('User')
             self.where = Where('id=123')
